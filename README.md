@@ -11,7 +11,7 @@ Tradutor de texto para Braille.
 $ poetry config virtualenvs.path .venv
 $ poetry config virtualenvs.in-project true
 ```
-### Adicionando dependências
+### Instalando dependências
 ```bash
 $ poetry install
 ```
