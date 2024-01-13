@@ -64,224 +64,224 @@ def letras(snap, flags):
 
     if a == snap:
         if flag == 1:
-            letter[0] = "A"
+            letter[0] = 'A'
             flag = 0
         else:
-            letter[0] = "a"
+            letter[0] = 'a'
     elif b == snap:
         if flag == 1:
-            letter[0] = "B"
+            letter[0] = 'B'
             flag = 0
         else:
-            letter[0] = "b"
+            letter[0] = 'b'
     elif c == snap:
         if flag == 1:
-            letter[0] = "C"
+            letter[0] = 'C'
             flag = 0
         else:
-            letter[0] = "c"
+            letter[0] = 'c'
     elif d == snap:
         if flag == 1:
-            letter[0] = "D"
+            letter[0] = 'D'
             flag = 0
         else:
-            letter[0] = "d"
+            letter[0] = 'd'
     elif e == snap:
         if flag == 1:
-            letter[0] = "E"
+            letter[0] = 'E'
             flag = 0
         else:
-            letter[0] = "e"
+            letter[0] = 'e'
     elif f == snap:
         if flag == 1:
-            letter[0] = "F"
+            letter[0] = 'F'
             flag = 0
         else:
-            letter[0] = "f"
+            letter[0] = 'f'
     elif g == snap:
         if flag == 1:
-            letter[0] = "G"
+            letter[0] = 'G'
             flag = 0
         else:
-            letter[0] = "g"
+            letter[0] = 'g'
     elif h == snap:
         if flag == 1:
-            letter[0] = "H"
+            letter[0] = 'H'
             flag = 0
         else:
-            letter[0] = "h"
+            letter[0] = 'h'
     elif i == snap:
         if flag == 1:
-            letter[0] = "I"
+            letter[0] = 'I'
             flag = 0
         else:
-            letter[0] = "i"
+            letter[0] = 'i'
     elif j == snap:
         if flag == 1:
-            letter[0] = "J"
+            letter[0] = 'J'
             flag = 0
         else:
-            letter[0] = "j"
+            letter[0] = 'j'
     elif k == snap:
         if flag == 1:
-            letter[0] = "K"
+            letter[0] = 'K'
             flag = 0
         else:
-            letter[0] = "k"
+            letter[0] = 'k'
     elif l == snap:
         if flag == 1:
-            letter[0] = "L"
+            letter[0] = 'L'
             flag = 0
         else:
-            letter[0] = "l"
+            letter[0] = 'l'
     elif m == snap:
         if flag == 1:
-            letter[0] = "M"
+            letter[0] = 'M'
             flag = 0
         else:
-            letter[0] = "m"
+            letter[0] = 'm'
     elif n == snap:
         if flag == 1:
-            letter[0] = "N"
+            letter[0] = 'N'
             flag = 0
         else:
-            letter[0] = "n"
+            letter[0] = 'n'
     elif o == snap:
         if flag == 1:
-            letter[0] = "O"
+            letter[0] = 'O'
             flag = 0
         else:
-            letter[0] = "o"
+            letter[0] = 'o'
     elif p == snap:
         if flag == 1:
-            letter[0] = "P"
+            letter[0] = 'P'
             flag = 0
         else:
-            letter[0] = "p"
+            letter[0] = 'p'
     elif q == snap:
         if flag == 1:
-            letter[0] = "Q"
+            letter[0] = 'Q'
             flag = 0
         else:
-            letter[0] = "q"
+            letter[0] = 'q'
     elif r == snap:
         if flag == 1:
-            letter[0] = "R"
+            letter[0] = 'R'
             flag = 0
         else:
-            letter[0] = "r"
+            letter[0] = 'r'
     elif s == snap:
         if flag == 1:
-            letter[0] = "S"
+            letter[0] = 'S'
             flag = 0
         else:
-            letter[0] = "s"
+            letter[0] = 's'
     elif t == snap:
         if flag == 1:
-            letter[0] = "T"
+            letter[0] = 'T'
             flag = 0
         else:
-            letter[0] = "t"
+            letter[0] = 't'
     elif u == snap:
         if flag == 1:
-            letter[0] = "U"
+            letter[0] = 'U'
             flag = 0
         else:
-            letter[0] = "u"
+            letter[0] = 'u'
     elif v == snap:
         if flag == 1:
-            letter[0] = "V"
+            letter[0] = 'V'
             flag = 0
         else:
-            letter[0] = "v"
+            letter[0] = 'v'
     elif w == snap:
         if flag == 1:
-            letter[0] = "W"
+            letter[0] = 'W'
             flag = 0
         else:
-            letter[0] = "w"
+            letter[0] = 'w'
     elif x == snap:
         if flag == 1:
-            letter[0] = "X"
+            letter[0] = 'X'
             flag = 0
         else:
-            letter[0] = "x"
+            letter[0] = 'x'
     elif y == snap:
         if flag == 1:
-            letter[0] = "Y"
+            letter[0] = 'Y'
         else:
-            letter[0] = "y"
+            letter[0] = 'y'
     elif z == snap:
         if flag == 1:
-            letter[0] = "Z"
+            letter[0] = 'Z'
             flag = 0
         else:
-            letter[0] = "z"
+            letter[0] = 'z'
     elif cedilha == snap:
-        letter[0] = "ç"
+        letter[0] = 'ç'
     elif espaco == snap:
-        letter[0] = " "
+        letter[0] = ' '
     elif ag == snap:
-        letter[0] = "á"
+        letter[0] = 'á'
     elif eg == snap:
-        letter[0] = "é"
+        letter[0] = 'é'
     elif ig == snap:
-        letter[0] = "í"
+        letter[0] = 'í'
     elif og == snap:
-        letter[0] = "ó"
+        letter[0] = 'ó'
     elif ug == snap:
-        letter[0] = "ú"
+        letter[0] = 'ú'
     elif acr == snap:
-        letter[0] = "à"
+        letter[0] = 'à'
     elif ecr == snap:
-        letter[0] = "è"
+        letter[0] = 'è'
     elif icr == snap:
-        letter[0] = "ì"
+        letter[0] = 'ì'
     elif ocr == snap:
-        letter[0] = "ò"
+        letter[0] = 'ò'
     elif ucr == snap:
-        letter[0] = "ù"
+        letter[0] = 'ù'
     elif ac == snap:
-        letter[0] = "â"
+        letter[0] = 'â'
     elif ec == snap:
-        letter[0] = "ê"
+        letter[0] = 'ê'
     elif oc == snap:
-        letter[0] = "ô"
+        letter[0] = 'ô'
     elif at == snap:
-        letter[0] = "ã"
+        letter[0] = 'ã'
     elif ot == snap:
-        letter[0] = ""  # verificar
+        letter[0] = ''  # verificar
     elif virg == snap:
-        letter[0] = " == "
+        letter[0] = ' == '
     elif doisp == snap:
-        letter[0] = ":"
+        letter[0] = ':'
     elif ponto == snap:
-        letter[0] = "."
+        letter[0] = '.'
     elif inte == snap:
-        letter[0] = "?"
+        letter[0] = '?'
     elif excla == snap:
-        letter[0] = "!"
+        letter[0] = '!'
     elif pontvirg == snap:
-        letter[0] = ";"
+        letter[0] = ';'
     elif hif == snap:
-        letter[0] = "-"
+        letter[0] = '-'
     elif abP == snap:
-        letter[0] = "("
+        letter[0] = '('
     elif feP == snap:
-        letter[0] = "){"
+        letter[0] = '){'
     elif mais == snap:
-        letter[0] = "+"
+        letter[0] = '+'
     elif aster == snap:
-        letter[0] = "*"
+        letter[0] = '*'
     elif divisao == snap:
-        letter[0] = "/"
+        letter[0] = '/'
     elif igual == snap:
-        letter[0] = "="
+        letter[0] = '='
     elif maiuscula == snap:
         flag = 1
-        letter[0] = ""
+        letter[0] = ''
     else:
-        letter[0] = "#"
+        letter[0] = '#'
 
     letter[1] = str(flag)
     return letter

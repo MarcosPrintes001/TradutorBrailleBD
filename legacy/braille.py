@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import cv2 as cv
+
 # import numpy as np;
 # from builtins import len
 # import bdLetra
@@ -9,17 +10,17 @@ import cv2 as cv
 # def verificao(VLine, VCol, centroids):
 #     for j in range(1):  #Coluna
 #         #print(VCol[j:j+3])
-#         remCol = [0];   
+#         remCol = [0];
 #         for i in range(0,len(VLine)-3,3):  #linha
 #             #print(VLine[i:i+4])
-                         
+
 #             vLetras = [0,0,0,0,0,0]
 #             vCent = [0,0,0,0,0,0]
 #             cnt = 0
-                
-#                 #retira a sub_imagem        
+
+#                 #retira a sub_imagem
 #             img = thresh[VLine[i]:VLine[i+3],VCol[j]:VCol[j+2]] #não precisa
-                
+
 #             for n in range(2): #Coluna
 #                 '''print(VCol[n])
 #                 print(VCol[n+1])
@@ -27,57 +28,56 @@ import cv2 as cv
 #                 for m in range(3): #linha
 #                     '''print(VLine[i+m])
 #                     print(VLine[(i+m)+1])'''
-                    
+
 #                     for k in range(len(centroids)):
-#                         if(centroids[k][0] >= VLine[i+m] and centroids[k][0] <= VLine[(i+m)+1] and  centroids[k][1] >= VCol[n] 
-#                            and centroids[k][1] <= VCol[n+1]):                    
+#                         if(centroids[k][0] >= VLine[i+m] and centroids[k][0] <= VLine[(i+m)+1] and  centroids[k][1] >= VCol[n]
+#                            and centroids[k][1] <= VCol[n+1]):
 #                             vLetras[cnt] = 1
 #                             vCent[cnt] = k
 #                             #print(VCol[m],VLine[n])
 #                             #print("")
-#                     cnt = cnt+1                
+#                     cnt = cnt+1
 
 #             #[carac, flag] = bdLetra.bdLetra(vLetras, flag)
 #             print(vLetras)
 #             dist = DistanceMetric.get_metric('euclidean')
 #             if(vLetras[0] == vLetras[2] and vLetras[0] != vLetras[1]):
-#                 r1=0 
-#                 r2=0 
-#                 r3=0 
-#                 r4=0 
-#                 if(vLetras[0] == vLetras[3]):    
+#                 r1=0
+#                 r2=0
+#                 r3=0
+#                 r4=0
+#                 if(vLetras[0] == vLetras[3]):
 #                     X = [ centroids[vCent[0]], centroids[vCent[3]] ]
 #                     r1 = dist.pairwise(X)[0][1]
 #                     print(r1)
-                    
-#                 if(vLetras[2] == vLetras[5]):    
+
+#                 if(vLetras[2] == vLetras[5]):
 #                     X = [ centroids[vCent[2]], centroids[vCent[5]] ]
 #                     r2 = dist.pairwise(X)[0][1]
-#                     print(r2)                    
-                    
-#                 if(vLetras[0] == vLetras[4]):    
+#                     print(r2)
+
+#                 if(vLetras[0] == vLetras[4]):
 #                     X = [ centroids[vCent[0]], centroids[vCent[4]] ]
 #                     r3 = dist.pairwise(X)[0][1]
 #                     print(r3)
 
-#                 if(vLetras[2] == vLetras[4]):    
+#                 if(vLetras[2] == vLetras[4]):
 #                     X = [ centroids[vCent[2]], centroids[vCent[4]] ]
 #                     r4 = dist.pairwise(X)[0][1]
 #                     print(r4)
-                    
+
 #                 if(r1 >= 12 or r2 >= 12 or r3 >= 14 or r4 >=14 ):
 #                     remCol.append(1)
 #                 else:
 #                     remCol.append(0)
-    
+
 #     if(np.max(remCol) == 1):
 #         VCol.remove(VCol[0])
 
 #     return VCol
-                    
-                    
-                    
-# #principal  
+
+
+# #principal
 # VCol = [17, 25, 38, 46, 58, 66, 79, 86, 99, 107, 120, 128, 141, 148, 161, 169, 182, 189, 202, 210, 222, 231, 243, 251, 264, 272, 285, 292, 305, 313, 325, 333, 346, 354, 366, 375, 387, 395, 408, 416, 428, 436, 449, 457, 469, 478]
 # VLine = [12, 20, 28, 36, 68, 76, 84, 115, 122, 130]
 # centroids = []
@@ -96,7 +96,7 @@ ret, thresh = cv.threshold(imgray, 230, 255, cv.THRESH_BINARY)
 # Filtro: Contorno de cada ponto baille
 im2, contours = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 
-'''
+"""
 centroids = []
 cx = []
 cy =[]
@@ -144,7 +144,7 @@ for i in range(len(cy)):
         p_aux = cy[i]
         VLine.append(cy[i]+limiar_gride)
 
-'''
+"""
 
 # VCol = verificao(VLine, VCol, centroids)
 
@@ -153,45 +153,35 @@ for i in range(len(cy)):
 # verf = 0
 # #num = 0
 # for i in range(0,len(VLine)-3,3):  #linha
-#     #print(VLine[i:i+4])          
+#     #print(VLine[i:i+4])
 #     for j in range(0,len(VCol)-2,2):  #Coluna
-#         #print(VCol[j:j+3])  
+#         #print(VCol[j:j+3])
 #         vLetras = [0,0,0,0,0,0]
-#         cnt = 0;      
-#         #retira a sub_imagem        
+#         cnt = 0;
+#         #retira a sub_imagem
 #         img = thresh[VLine[i]:VLine[i+3],VCol[j]:VCol[j+2]] #NÃO PRECISA
-        
+
 #         for n in range(2): #Coluna
 #             '''print(VCol[j+n])
-#             print(VCol[(j+n)+1])'''    
+#             print(VCol[(j+n)+1])'''
 #             for m in range(3): #linha
 #                 '''print(VLine[i+m])
 #                 print(VLine[(i+m)+1])
-#                 print("")'''                     
+#                 print("")'''
 #                 for k in range(len(centroids)):
-#                         if(centroids[k][0] >= VLine[i+m] and centroids[k][0] <= VLine[(i+m)+1] and  centroids[k][1] >= VCol[j+n] and centroids[k][1] <= VCol[(j+n)+1]):                    
+#                         if(centroids[k][0] >= VLine[i+m] and centroids[k][0] <= VLine[(i+m)+1] and  centroids[k][1] >= VCol[j+n] and centroids[k][1] <= VCol[(j+n)+1]):
 #                             vLetras[cnt] = 1
 #                             #print(VCol[m],VLine[n])
 #                             #print("")
-#                 cnt = cnt+1                
+#                 cnt = cnt+1
 #         [carac, flag] = bdLetra.letra_bd(vLetras, flag)
 #         #[carac, flag, num] = bdLetra.bdLetra(vLetras, flag, num)
 #         print(carac)
 #     print("")
 # print("")
-            
-            
-  
-    
-  
-    
-  
-    
-
-    
 
 
-''' #busca inversa
+""" #busca inversa
 #busca Cela
 flag = 0
 for i in range(0,len(VLine)-3,3):  #linha
@@ -227,27 +217,22 @@ for i in range(0,len(VLine)-3,3):  #linha
     print("")
       
 
-'''
+"""
 
 
-
-
-
-
-
-'''
+"""
         #retira a sub_imagem        
         img = thresh[VLine[i]:VLine[i+3],VCol[j-2]:VCol[j]]
         
         #desenhar um retagulo
         cv.rectangle(thresh,(VCol[j-2],VLine[i]), (VCol[j],VLine[i+3]), 50 )
-'''        
-'''        cv.imshow("original",thresh)
+"""
+"""        cv.imshow("original",thresh)
         cv.imshow("subimag",img)
-        cv.waitKey();'''
+        cv.waitKey();"""
 
 
-'''  
+"""  
     #print(cv.boundingRect(contour))
 
 #derp,contours,hierarchy = cv.findContours(imageSeg,cv.RETR_LIST,cv.CHAIN_APPROX_SIMPLE)
@@ -261,4 +246,4 @@ print(thresh.shape)
 
 cv.imshow("subs",thresh)
 cv.waitKey(0);
-'''
+"""
