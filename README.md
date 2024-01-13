@@ -17,5 +17,5 @@ $ poetry install
 ```
 ### Executando projeto
 ```bash
-$ poetry run python legacy/braille.py
+$ poetry run task dev
 ```
