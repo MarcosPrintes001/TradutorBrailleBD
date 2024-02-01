@@ -38,5 +38,5 @@ extend-exclude = '(migrations/)'
 [tool.taskipy.tasks]
 lint = 'ruff . && blue --check . --diff'
 format = 'blue .  && isort .'
-dev = 'uvicorn src.app:app --reload'
+dev = 'uvicorn src.app:app  --host 0.0.0.0 --reload'
 pre_test = 'task lint'
